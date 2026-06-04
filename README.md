@@ -1,0 +1,2 @@
+# Virtual_laboratoriya_platformasi
+Laboratoriya
