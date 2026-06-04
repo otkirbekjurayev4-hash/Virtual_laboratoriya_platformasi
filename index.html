@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Laboratoriya Platformasi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="toast" class="toast"></div>
+  <section id="loginPage" class="login-page">
+    <div class="login-card">
+      <div class="brand-mark">VL</div>
+      <h1>Virtual laboratoriya platformasi</h1>
+      <p>Texnik fanlar uchun interaktiv tajriba, test, baholash va monitoring tizimi.</p>
+      <form id="loginForm">
+        <label>Login</label>
+        <input id="username" autocomplete="username" placeholder="Login kiriting" required />
+        <label>Parol</label>
+        <div class="password-box">
+          <input id="password" type="password" autocomplete="current-password" placeholder="Parol kiriting" required />
+          <button type="button" id="togglePassword">Ko‘rsatish</button>
+        </div>
+        <button class="primary-btn" type="submit">Platformaga kirish</button>
+      </form>
+    </div>
+    <div class="hero-panel">
+      <h2>Axborot texnologiyalari va kasbiy fanlar integratsiyasi</h2>
+      <p>Admin, o‘qituvchi va talaba kabinetlari, 30 ta fan, 30 ta o‘qituvchi, 30 ta talaba, laboratoriya simulyatsiyasi va avtomatik baholash modullari mavjud.</p>
+      <div class="hero-grid">
+        <span>Interaktiv tajriba</span><span>Grafik tahlil</span><span>Test nazorati</span><span>Monitoring</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="appPage" class="app-page hidden">
+    <aside class="sidebar">
+      <div class="side-brand"><span>VL</span><b>Platforma</b></div>
+      <nav id="menu"></nav>
+      <button id="logoutBtn" class="logout-btn">Chiqish</button>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div><h2 id="pageTitle">Dashboard</h2><p id="pageSubTitle">Boshqaruv paneli</p></div>
+        <div class="user-chip"><span id="userAvatar">A</span><div><b id="currentUserName"></b><small id="currentUserRole"></small></div></div>
+      </header>
+      <div id="content"></div>
+    </main>
+  </section>
+  <script src="app.js"></script>
+</body>
+</html>
